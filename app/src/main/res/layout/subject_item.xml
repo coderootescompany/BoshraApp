@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layoutDirection="rtl"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/favcansel"
+            android:layout_width="0dp"
+            android:layout_weight="1.8"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_height="180dp"
+            android:background="@drawable/imageback"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/doctor1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="صحتك تهمنا:"
+                android:textSize="18dp"
+                android:textColor="#2142ba"/>
+
+            <TextView
+                android:id="@+id/titledescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                app:layout_constraintHorizontal_weight="0.5"
+                android:layout_marginRight="5dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                android:text="سن اليأس :  متي يبدا وماذا يحدث في الجسم؟"
+                android:textSize="22dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:padding="3dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titledescription"
+                android:text="سن اليأس :  متي يبدا وماذا يحدث في الجسمسن اليأس :  متي يبدا وماذا يحدث في الجسمسن اليأس :  متي يبدا وماذا يحدث في الجسمسن اليأس :  متي يبدا وماذا يحدث في الجسم"
+                android:textSize="18dp"
+                android:textColor="#a0a1ab"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_marginRight="9dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="17 يوليو 2018"
+                    android:textSize="12dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#6e7079"/>
+
+                <ImageView
+                    android:id="@+id/ds"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/menuq"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/upload"
+                    />
+                <ImageView
+                    android:id="@+id/menuq"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/save"
+                    android:layout_marginTop="6dp"
+                    />
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

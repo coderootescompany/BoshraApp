@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.example.hossam.boshraapp.VideosFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="6dp"
+    android:layout_marginBottom="30dp"
+    android:layout_marginRight="6dp"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="com.example.hossam.boshraapp.Fragments.VideosFragment"
+    tools:listitem="@layout/fragment_video_item" >
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:name="com.example.hossam.boshraapp.VideosFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.example.hossam.boshraapp.Fragments.VideosFragment"
+        tools:listitem="@layout/fragment_video_item" />
+
+    <VideoView
+        android:id="@+id/vvboshra"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        android:src="@drawable/doctor1"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

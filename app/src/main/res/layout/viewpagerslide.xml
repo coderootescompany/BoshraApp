@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/im_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/doctor1"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/namecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:weightSum="6"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/doctornametxt"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_weight="2.5"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/nameback"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/speccontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namecontainer"
+        android:weightSum="6"
+        android:gravity="left"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/doctorspeaialist"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="3.5"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:background="@drawable/nameback"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speccontainer"
+        android:weightSum="6"
+        android:gravity="left"
+        android:layout_marginLeft="35dp"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/reservedoc"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:paddingRight="20dp"
+        android:layout_weight="2.25"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/reservenow"
+        android:text="@string/reserve"
+        android:paddingEnd="20dp"
+        android:paddingStart="30dp"
+        android:layout_marginStart="15dp" />
+    </LinearLayout>
+</RelativeLayout>

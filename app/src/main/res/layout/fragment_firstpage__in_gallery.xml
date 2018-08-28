@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:padding="15dp"
+    android:layout_marginBottom="35dp"
+    android:background="@color/white"
+    tools:context=".Fragments.Catogries_In_galleryFragment">
+
+
+    <LinearLayout
+        android:id="@+id/depart1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:layout_weight="50">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sub_image"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2.6"
+            android:layout_height="180dp"
+            android:src="@drawable/newfarha"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#ffffff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="@string/newhappy"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/depart2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_weight="50">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="@string/boshraactivity"
+            />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2.6"
+            android:layout_height="180dp"
+            android:src="@drawable/images"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#ffffff"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/mainpageimage"/>
+
+                <EditText
+                    android:id="@+id/luname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/username"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/registertext_back"
+                    android:gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <EditText
+                    android:id="@+id/lpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/password"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/registertext_back"
+                    android:gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:id="@+id/loginn"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/reserve_back"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="start"/>
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <EditText
+                    android:id="@+id/runame"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/username"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/registertext_back"
+                    android:gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <EditText
+                    android:id="@+id/rpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/mobile"
+
+                    android:background="@drawable/registertext_back"
+                    android:gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/mobileispass"
+                    android:gravity="start"
+                    android:textColor="@color/red"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/reserve_back"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

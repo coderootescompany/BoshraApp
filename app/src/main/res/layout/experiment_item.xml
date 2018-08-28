@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/user_image"
+        android:src="@drawable/userone"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/adminaccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/accept"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="end"
+        android:text="@string/accept"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        android:text="حازم مبخائيل"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#9B9B9B"
+        android:textSize="15dp"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        android:text="11 دقيقة"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:textColor="#9B9B9B"
+        tools:ignore="NotSibling"
+      />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/user_image"
+        android:text="مجمع البشري هو افضل المجمعات علي الاطلاق"
+        android:textSize="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#9B9B9B"
+        tools:ignore="NotSibling" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/images_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layoutDirection="locale"
+        android:orientation="horizontal"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/images_recycler"
+        android:layout_height="1dp"
+        android:background="#9B9B9B"/>
+
+    <LinearLayout
+        android:id="@+id/counters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="172dp"
+        >
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120 "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/like"/>
+
+        <TextView
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120 " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/counters"
+        android:layout_height="1dp"
+        android:background="#9B9B9B"/>
+
+    <LinearLayout
+        android:id="@+id/useractions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/like"
+            android:layout_marginRight="10dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#9B9B9B"
+            />
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/comment"
+            android:layout_marginRight="10dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#9B9B9B"
+            />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/share"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

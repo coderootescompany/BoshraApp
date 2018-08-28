@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.example.hossam.boshraapp.Helpers.RoundRectCornerImageView
+                        android:id="@+id/imgupload"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/userone"
+                        android:scaleType="fitXY"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/luname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/username"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/registertext_back"
+                    android:gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <EditText
+                    android:id="@+id/lpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/mobile"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/registertext_back"
+                    android:gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/reserve_back"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

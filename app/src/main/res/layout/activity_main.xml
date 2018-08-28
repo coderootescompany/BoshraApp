@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7EBEE"
+    tools:context=".Activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/menu_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/menu_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linearheight"
+        android:background="@drawable/linear_background"
+        android:padding="3dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/mainpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/mainpageimage" />
+
+            <TextView
+                android:id="@+id/maintxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/textcolorinnenu"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizeinmenu"
+                android:text="@string/mainpage"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/reservations"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/times" />
+
+            <TextView
+                android:id="@+id/reservtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/textcolorinnenu"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizeinmenu"
+                android:text="@string/myreservation"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/videos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/videos" />
+
+            <TextView
+                android:id="@+id/videostxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/textcolorinnenu"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizeinmenu"
+                android:text="@string/videos"
+
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/images"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/images" />
+
+            <TextView
+                android:id="@+id/imagestxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/textcolorinnenu"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizeinmenu"
+                android:text="@string/images"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:background="@drawable/more" />
+
+            <TextView
+                android:id="@+id/moretxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/textcolorinnenu"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsizeinmenu"
+                android:text="@string/more"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
